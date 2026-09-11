@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>mlog</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2026-09-10T14:48:49-04:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Max Lair</name>
+   <email>max@lairfamily.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Welcome to Jekyll, we have arrived</title>
+   <link href="http://localhost:4000/2026/09/10/difference-between-font-formats"/>
+   <updated>2026-09-10T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2026/09/10/difference-between-font-formats</id>
+   <content type="html">&lt;p&gt;Welcome to Jekyll! I have been bouncing around a lot of various ways to render static markdown blogs, and while NextJS with &lt;code&gt;react-markdown&lt;/code&gt; seems like a good solution, it just wasnt scratching the itch. I wanted something that had very little bloat. I stumbled (back) upon Jekyll, and I’m happy to say this one is sticking!&lt;/p&gt;
+
+&lt;p&gt;While I’m here, it’s a good time for a blog preamble. I want to make various blogs about life, tech, writing, and other interests I might have. It’s a part my recent and continued effort to carve out my corner of the internet. Mostly for me, but also to grow the sense of completeness in a lot of my projects. I leave a lot unfinished, and have a lot of thoughts, but for the most part I don’t publish anything. I want a space to just write about life, and my (ever-changing) interests.&lt;/p&gt;
+
+&lt;p&gt;Feel free to join me for this wild ride! Thanks for tuning in!&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_640.png&quot; alt=&quot;Description of the image&quot; /&gt;
+  &lt;figcaption&gt;This is the image caption text.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</content>
+ </entry>
+ 
+
+</feed>

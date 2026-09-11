@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" >
+  {% include head.html %}  
+  <body>
+    <main>
+	    
+	    {% include navigation.html %}
+	    
+      {{ content }}
+        	    
+    </main>
+    <footer>
+      <hr/>
+      <small>&copy; {{ site.time | date: "%Y" }} Max Lair</small>
+    </footer>
+            
+  </body>
+</html>

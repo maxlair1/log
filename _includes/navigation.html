@@ -1,0 +1,18 @@
+<header aria-hidden="true" class="no-print">
+   <small class="logo" href="{{ site.baseurl }}/"><strong>{{ site.title }}</strong> by Max lair</small>
+   <nav role="navigation" aria-hidden="true">
+      <ul>
+         {% for item in site.data.navigation.links %}
+            <li>
+               <a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>
+                  {% if item.icon %}
+                     <img src="{{ item.icon }}" style="width: 1em; height: 1em; vertical-align: middle;" alt="{{ item.title }} icon" />
+                  {% endif %}
+                  {{ item.title }}
+               </a>
+            </li>
+         {% endfor %}
+      </ul>
+   </nav>
+   <hr/>
+</header>

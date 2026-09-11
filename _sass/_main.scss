@@ -1,0 +1,236 @@
+// @import url('https://fonts.cdnfonts.com/css/menlo');
+
+:root {
+	--color-foreground: rgb(22, 23, 26);
+	--color-background: rgb(255, 255, 255);
+	--color-muted:  rgb(241, 240, 240);
+	--color-muted-foreground: rgb(54, 54, 54);
+	--color-brand: rgb(250, 229, 225);
+	--color-brand-foreground: rgb(124, 35, 5);
+	--color-border: rgb(236, 236, 236);
+	--color-accent: rgb(178, 178, 237);
+	--color-accent-foreground: #00a;
+	
+	--site-max-width: 60rem;
+}
+
+*,:after,:before {
+	box-sizing:border-box;
+	background-color:inherit;
+	color:inherit;
+	margin:0;
+	padding:0;
+}
+
+body {
+	// font-family: 'Menlo', sans-serif;
+	font-family: sans-serif, monospace;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+	line-height:1.5;
+	font-size: 0.875rem;
+	color: var(--color-foreground);
+	// padding: 2rem 1rem;
+}
+
+main {
+	max-width: 90ch;
+	margin: 0 auto;
+	padding: 1rem;
+	min-height: calc(100vh - 100px);
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	margin-block: 1rem;
+}
+
+footer {
+	margin: 0 auto;
+	max-width: 90ch;
+	height: 100px;
+	padding: 1rem;
+}
+
+section {
+	flex-basis:0;
+	flex-grow:999;
+	min-width:70%;
+	display:flex;
+	flex-direction:column;
+}
+
+figure {
+	text-align: center;
+	margin-block: 1rem;
+}
+
+figure img {
+	border: 1px solid var(--color-border);
+	max-height: 400px
+}
+
+figcaption {
+	font-size: smaller;
+}
+
+.logo {
+	font-family: monospace;
+	margin-block: 1rem;
+	font-style: italic;
+	color: var(--color-muted-foreground);
+}
+
+a {
+    text-align: justify;
+    list-style-type: none;
+    line-height: 1.75em;
+    margin: 0;
+    padding: 0;
+    color: var(--color-accent-foreground);
+	// text-decoration: underline;
+}
+
+pre {
+	margin: .5rem 0;
+	padding: .5rem;
+}
+
+.post {
+	margin-block: 1rem;
+}
+
+.post time {
+	color: var(--color-muted-foreground);
+	margin-bottom: 1rem;
+}
+
+.post p {
+	margin: .5rem 0;
+}
+
+.post h1, .post h2, .post h3, .post h4 {
+	margin-bottom: 1rem;
+}
+
+.post h2:first-child, .project h2:first-child, .photo h2:first-child {
+	margin-top: 0;
+}
+
+.meta {
+	margin-bottom: 2rem;
+}
+
+.tag {
+	background-color: var(--color-muted);
+	color: var(--color-muted-foreground);	
+	border: 0.25px solid #bbbbbb;
+	border-radius: 4px;
+	padding: 0px 3px 1px 3px;
+	text-decoration: none;
+}
+
+code,pre {
+	background: var(--color-muted);
+}
+
+code {
+	padding: .1rem;
+}
+
+pre code {
+	border: none;
+}
+
+pre {
+	padding: 1rem;
+	overflow-x: auto;
+}
+
+img {
+	max-width:100%;
+}
+
+hr {
+	background: var(--color-border);
+    height: 3px;
+    border: 0;
+	margin: 0.5rem 0;
+}
+
+header {
+	flex-basis:10rem;
+	flex-grow:1;
+	position:relative;
+	margin-bottom: 1.5rem;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header li {
+	text-align: right;
+	margin-right: 0.75rem
+}
+
+header a.active {
+	font-weight: bold;
+}
+
+blockquote {
+	font-style: italic;
+    border-left: 5px solid var(--color-border);
+    padding-left: 1rem;
+}
+
+h1,h2,h3,h4,h5 {
+	line-height: 1;
+	margin: 1rem 0;
+	font-weight: 600;
+}
+
+section h1:first-child {
+	margin-top: 0;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+.posts ul,header ul {
+	list-style:none;
+	margin-block: 0.5rem;
+}
+
+.posts li {
+	align-items:center;
+	display:flex;
+	justify-content:start;
+	gap: 0.5rem;
+	margin-bottom: 0.125rem;
+}
+
+.posts li a, .posts li div, .projects li a {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.posts li time, .projects li time {
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+	color: var(--color-muted-foreground);
+	font-family: monospace;
+	font-size: 0.8rem;
+}
+
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
