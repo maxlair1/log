@@ -1,5 +1,5 @@
 site: mlog
-url: #yoururl
+url: https://log.maxlair.com
 title: mlog
 description: Max's minimal jekyll blog
 author:
@@ -9,7 +9,7 @@ author:
   url: maxlair.com
 permalink: pretty
 
-baseurl: ""
+baseurl: "/"
 
 highlighter: none
 
