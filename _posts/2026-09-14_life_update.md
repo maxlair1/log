@@ -1,11 +1,15 @@
 ---
-title: "Life Update: Coffee, Homelab, and Novice Penmanship"
-tag: "life"
+layout: post
+title: Life Update: Coffee, Homelab, and Novice Penmanship
+description: Week-start update about life and things.
+summary: Talk about rewriting wife's website, homelabs with Minecraft server, new house, and writing ability.
+comments: true
+tags: [life]
 ---
 
 Happy Monday!
 
-I wanted to publish a quick weekend update, and some other projects I am currently working on.
+I wanted to publish a quick week-start update, and some other projects I am currently working on.
 
 It has been a whirlwind these last few weeks. We have been jumping from life stage to life stage just a little too fast for comfort. From moving to our forever home (hopefully), to listening to the heartbeat of our soon-to-come baby #2, there is so much to do, and so little time. However, my relentless brain wont stop picking up new interests.
 
