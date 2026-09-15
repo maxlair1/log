@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>mlog</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2026-09-10T14:48:49-04:00</updated>
+ <link href="http://localhost:4000//atom.xml" rel="self"/>
+ <link href="http://localhost:4000//"/>
+ <updated>2026-09-14T21:08:27-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Max Lair</name>
@@ -13,8 +13,74 @@
 
  
  <entry>
+   <title>Coffee, Homelab, and Novice Penmanship</title>
+   <link href="http://localhost:4000//2026/09/14/life-update"/>
+   <updated>2026-09-14T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2026/09/14/life-update</id>
+   <content type="html">&lt;p&gt;Happy Monday!&lt;/p&gt;
+
+&lt;p&gt;I wanted to publish a quick week-start update, and some other projects I am currently working on.&lt;/p&gt;
+
+&lt;p&gt;It has been a whirlwind these last few weeks. We have been jumping from life stage to life stage just a little too fast for comfort. From moving to our forever home (hopefully), to listening to the heartbeat of our soon-to-come baby #2, there is so much to do, and so little time. However, my relentless brain wont stop picking up new interests.&lt;/p&gt;
+
+&lt;h3 id=&quot;rewriting-the-infamous-coffee-shop-list&quot;&gt;Rewriting the infamous coffee shop list&lt;/h3&gt;
+
+&lt;p&gt;This week I have been working on revamping &lt;a href=&quot;https://trails.coffee&quot;&gt;trails.coffee&lt;/a&gt;, my Wife’s gargantuan list of cafes. And yes, she did insist that they are ranked in chronological order. With more than two hundred entries. I’m a good husband, so I take on the tough design challenge that is a platform responsive, infinite list, that can be reordered and edited. Each cafe has a lot of content you can include. I even built a slot for photos, so she can upload some visuals from our visits! Below is an example of the cafe type if you’re interested.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;// each Cafe entry at trails.coffee :)
+export type Cafe = {
+id: number;
+created_at: string;
+name: string;
+images: string[] | null;
+body: string | null;
+date_visited: string | null;
+city: string | null;
+state: string | null;
+address: string | null;
+tags: number[] | null;
+rank: number;
+archived: boolean;
+map_hidden?: boolean | null;
+map_query?: string | null;
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the rewrite I am (like always) using React, but trying out &lt;a href=&quot;https://bun.com/&quot;&gt;Bun&lt;/a&gt; JavaScript runtime this time around. Additionally, structuring the UI with &lt;a href=&quot;https://www.radix-ui.com/&quot;&gt;Radix&lt;/a&gt; primitives. I’m new-ish to the world of server-side architecture, but thus far my golden goose has been &lt;a href=&quot;https://supabase.com&quot;&gt;Supabase&lt;/a&gt;. It has a lot of tools, tutorials, and relevant packages to keep the layman (like me) on track.&lt;/p&gt;
+
+&lt;p&gt;The challenges thus far have mostly been with touch, as she really wants an “app-like” feel to the site. Being able to add detailed entries on the fly is important to her. It’s understandably essential to be able to jot down thoughts as they come. I’ve been tackling this by using some tried-and-true components like Emil Kowal’s &lt;a href=&quot;https://vaul.emilkowal.ski/&quot;&gt;Vaul&lt;/a&gt; drawer. However, drag and drop is my next huge hurdle.&lt;/p&gt;
+
+&lt;p&gt;I believe that I’ve overcomplicated the listing, by forcing table functionality. In reality, tables are not the best way to display horizontal, multi-axis data on mobile devices. Coincidentally, while working in Design Systems at Rey Rey, I am working on revamping the tables and DataGrids, meaning I now consider myself an expert (for this week). Cards using primary, secondary and tertiary column identifiers seem to win big when it comes to mobile display.&lt;/p&gt;
+
+&lt;p&gt;I’m excited to keep writing it, and if you want to check out the source for the original, please feel free to check out &lt;a href=&quot;https://github.com/maxlair1/coffee-trail&quot;&gt;my Github&lt;/a&gt;!&lt;/p&gt;
+&lt;h3 id=&quot;homelab-and-server-ing&quot;&gt;Homelab and server-ing&lt;/h3&gt;
+
+&lt;p&gt;I put up a Minecraft server. Again.&lt;/p&gt;
+
+&lt;p&gt;It’s better though, I promise. People are really hooked this time. But I have arrived at a larger issue. I’ve created a fancy Docker stack, clean Glance homepage, but this optimization has consequences. I can’t just type directly into the console like I am familiar with for docker-compose applications. To remedy this, I need a webGUI I can access outside of my local network. Apparently, I have been living under a rock because today I discovered &lt;a href=&quot;https://flask.palletsprojects.com/en/stable/&quot;&gt;Flask&lt;/a&gt;. Flask is a WGSI framework for python, and it works exceptionally well for this use case. I strapped up a ultra-simple TUI-like interface to just view and interact with the Minecraft Server. It’s working well… I plan to improve it as I go!&lt;/p&gt;
+
+&lt;p&gt;My future goal is to hook up some additional devices, then playing around with Docker swarm to improve the &lt;a href=&quot;https://www.youtube.com/watch?v=wsO-Td0hqXo&quot;&gt;dedotated wam&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As far as my local server goes, one of the perks of moving means that I get a new server room. Glorious 9’ by 9’ of pure nerd playground. Soon I will explore building a custom server rack using angle iron and 3D-printed mounting brackets. Hopefully, It will be a dramatic improvement from the previous attempt.&lt;/p&gt;
+
+&lt;h3 id=&quot;writing-long-term-goals-and-farewell&quot;&gt;Writing, long-term goals, and farewell&lt;/h3&gt;
+
+&lt;p&gt;The reason I am here, most likely writing for no one but myself, is to document, improve my writing skills, and carve out my little corner of the internet. I’ll try to give frequent life-updates, and try to grow a greater appreciation of writing. It’s another art form really.&lt;/p&gt;
+
+&lt;p&gt;Until next time internet!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Max&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“A mind is a terrible thing to waste. If you understand things about the world, you can change it.” - Casey Simpson&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Welcome to Jekyll, we have arrived</title>
-   <link href="http://localhost:4000/2026/09/10/difference-between-font-formats"/>
+   <link href="http://localhost:4000//2026/09/10/difference-between-font-formats"/>
    <updated>2026-09-10T00:00:00-04:00</updated>
    <id>http://localhost:4000/2026/09/10/difference-between-font-formats</id>
    <content type="html">&lt;p&gt;Welcome to Jekyll! I have been bouncing around a lot of various ways to render static markdown blogs, and while NextJS with &lt;code&gt;react-markdown&lt;/code&gt; seems like a good solution, it just wasnt scratching the itch. I wanted something that had very little bloat. I stumbled (back) upon Jekyll, and I’m happy to say this one is sticking!&lt;/p&gt;
