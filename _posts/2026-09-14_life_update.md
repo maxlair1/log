@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Life Update: Coffee, Homelab, and Novice Penmanship
+title: Coffee, Homelab, and Novice Penmanship
 description: Week-start update about life and things.
 summary: Talk about rewriting wife's website, homelabs with Minecraft server, new house, and writing ability.
 comments: true
