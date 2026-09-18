@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>mlog</title>
- <link href="http://localhost:4000//atom.xml" rel="self"/>
- <link href="http://localhost:4000//"/>
- <updated>2026-09-14T21:08:27-04:00</updated>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2026-09-18T12:05:13-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Max Lair</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>Coffee, Homelab, and Novice Penmanship</title>
-   <link href="http://localhost:4000//2026/09/14/life-update"/>
+   <link href="http://localhost:4000/2026/09/14/life-update"/>
    <updated>2026-09-14T00:00:00-04:00</updated>
    <id>http://localhost:4000/2026/09/14/life-update</id>
    <content type="html">&lt;p&gt;Happy Monday!&lt;/p&gt;
@@ -80,7 +80,7 @@ map_query?: string | null;
  
  <entry>
    <title>Welcome to Jekyll, we have arrived</title>
-   <link href="http://localhost:4000//2026/09/10/difference-between-font-formats"/>
+   <link href="http://localhost:4000/2026/09/10/difference-between-font-formats"/>
    <updated>2026-09-10T00:00:00-04:00</updated>
    <id>http://localhost:4000/2026/09/10/difference-between-font-formats</id>
    <content type="html">&lt;p&gt;Welcome to Jekyll! I have been bouncing around a lot of various ways to render static markdown blogs, and while NextJS with &lt;code&gt;react-markdown&lt;/code&gt; seems like a good solution, it just wasnt scratching the itch. I wanted something that had very little bloat. I stumbled (back) upon Jekyll, and I’m happy to say this one is sticking!&lt;/p&gt;

@@ -1,0 +1,25 @@
+<span
+  class="likebtn-wrapper"
+  data-theme="custom"
+  data-icon_l_c_v="#057dfb"
+  data-icon_d_c_v="#ff0020"
+  data-identifier="{{ include.id }}"
+  data-counter_clickable="true"
+  data-popup_disabled="true"
+  data-popup_width="0"
+  data-share_enabled="false"
+  data-addthis_service_codes="facebook,twitter"
+  data-tooltip_enabled="true"
+></span>
+<script>
+  (function (d, e, s) {
+    if (d.getElementById("likebtn_wjs")) return;
+    a = d.createElement(e);
+    m = d.getElementsByTagName(e)[0];
+    a.async = 1;
+    a.id = "likebtn_wjs";
+    a.src = s;
+    m.parentNode.insertBefore(a, m);
+  })(document, "script", "//w.likebtn.com/js/w/widget.js");
+</script>
+<!-- LikeBtn.com END -->

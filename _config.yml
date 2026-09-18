@@ -8,8 +8,10 @@ author:
   email: max@lairfamily.com
   url: maxlair.com
 permalink: pretty
+timezone: America/New_York
 
-baseurl: "/"
+
+baseurl: ""
 
 highlighter: none
 
@@ -27,7 +29,8 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-sitemap  
+  - jekyll-sitemap 
+  - jekyll-timeago 
 
 collections:
   pages:
@@ -36,7 +39,10 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
+  bytes:
+    output: true
   
+  # Frontmatter defaults
 defaults:
   -
     scope:
