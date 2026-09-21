@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<h2>Posts</h2>
 <section class="posts">
 <ul>
 {% for post in site.posts %}
@@ -12,5 +13,32 @@ layout: default
 </li>
 {% endfor %}
 </ul>
+</section>
+<section class="bytes" style="margin-top: 3rem">
+   <hr/>
+   <h4>Recent Bytes</h4>
+   <br/>
+    <ul>
+      {% assign sorted = site.bytes | sort: "date" | reverse %}
+      {% for byte in sorted limit:2 %}
+       <li class="byte">
+            <span class="meta">
+               <a href="https://maxlair.com">
+                  <img class="pfp" src="/max_pfp.png" alt="icon" aria-label="Max Lair's profile picture" width="16" height="16"/>
+                  <em>Max Lair</em>
+               </a> 
+               said
+               <time datetime="{{ byte.date | date_to_xmlschema }}">{{ byte.date | timeago }}</time>{% if byte.topic %}│<span class="flagger">on:</span>
+               <em>{{ byte.topic }}</em>
+               {% endif %}
+               <br/>
+            </span>
+            <p>
+               {{ byte.content }}                    
+            </p>
+         </li>
+         {% endfor %}
+         <a href="/bytes">View all</a>
+    </ul>
 </section>
 

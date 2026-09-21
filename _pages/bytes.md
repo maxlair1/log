@@ -27,5 +27,3 @@ title: Bytes
         {% endfor %}
     </ul>
 </section>
-
-                <!-- {% include like_btn.html id=byte.id %}
