@@ -2,6 +2,7 @@
 layout: byte
 date: 2026-09-21 11:13:00
 id: 05
+topic: Desktop UX
 ---
 
-Fantastic talk by [Scott Jenson on the need for Desktop UX to improve](https://www.youtube.com/watch?v=V7AfAcQwLW0). His designs and thesis are so captivating. Honestly rekindles the fire I have for computer and OS design
+Fantastic talk by <a href="https://www.youtube.com/watch?v=V7AfAcQwLW0">Scott Jenson on the need for Desktop UX to improve</a>. His designs and thesis are so captivating. Lot's of focus on Working Memory, and how the workflow Claude Code introduced can point us towards better multi-activity experiences. Honestly rekindles the fire I have for computer and OS design. 
