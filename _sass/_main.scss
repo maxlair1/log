@@ -280,6 +280,11 @@ strong, b {
     color: var(--color-fg-contrast-4-5);
 }
 
+footer .links a {
+	margin-inline: 2px;
+	aspect-ratio: 1/1;
+}
+
 @media print
 {    
     .no-print, .no-print *
