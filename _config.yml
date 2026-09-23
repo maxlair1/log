@@ -1,7 +1,7 @@
-site: mlog
+site: log
 url: https://log.maxlair.com
-title: mlog
-description: Max's minimal jekyll blog
+title: log
+# description: Max Lair
 author:
   name: Max Lair
   avatar:

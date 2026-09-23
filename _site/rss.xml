@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>mlog</title>
+ <title>log</title>
  <link href="http://localhost:4000/rss.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
  <updated>2026-09-23T08:59:17-04:00</updated>
