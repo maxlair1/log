@@ -21,7 +21,7 @@ title: Bytes
                     <br/>
                 </span>
                 <p>
-                    {{ byte.content }}                    
+                    {{ byte.content | markdownify }}                    
                 </p>
             </li>
         {% endfor %}

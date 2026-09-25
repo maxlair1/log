@@ -1,7 +1,6 @@
 site: log
 url: https://log.maxlair.com
 title: log
-# description: Max Lair
 author:
   name: Max Lair
   avatar:
@@ -41,6 +40,7 @@ collections:
     permalink: /:year/:month/:day/:slug
   bytes:
     output: true
+    
   
   # Frontmatter defaults
 defaults:
