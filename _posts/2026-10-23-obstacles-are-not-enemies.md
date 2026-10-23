@@ -1,6 +1,14 @@
-That boulder on your running path might be there to keep you from jogging off the cliff. Moving the obstacle simply reveals the cliff. It takes climbing over it to realize you'd much rather climb than run.
+---
+layout: post
+title: Obstacles are not enemies
+description: Joy in work, waiting, and inconvenience
+summary: That boulder on your running path might be there to keep you from jogging off the cliff. Moving the obstacle simply reveals the cliff. It takes climbing over it to realize you'd much rather climb than run.
+comments: true
+tag: [life, philosophy, faith]
+---
 
-Joy in work, waiting, and inconvenience
+#### _That boulder on your running path might be there to keep you from jogging off the cliff. Moving the obstacle simply reveals the cliff. It takes climbing over it to realize you'd much rather climb than run._
+---
 
 ### Introduction
 
